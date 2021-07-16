@@ -1,0 +1,92 @@
+* {
+	box-sizing: border-box;
+}
+
+.item {
+	float: left;
+}
+
+.link {
+	padding: 10px 25px;
+	display: block;
+	text-decoration: none;
+	background-color: aqua;
+	color: burlywood;
+}
+
+.link:hover {
+	background-color: rgb(32, 95, 95);
+}
+
+.clearfix::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+
+.sub-link {
+	display: block;
+	text-decoration: none;
+	background-color: rgb(115, 194, 115);
+	color: chocolate;
+	padding: 7px 20px;
+}
+
+.sub-link:hover {
+	background-color: rgb(119, 139, 119);
+
+}
+
+.sub-list {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+}
+
+.item {
+	position: relative;
+}
+
+.item:hover .sub-list {
+    display: block;
+}
+
+.item:hover .link {
+	background-color: rgb(32, 95, 95);
+}
+
+.sub-sub-link {
+	display: block;
+	padding: 10px 20px;
+	background-color: rgb(48, 47, 151);
+	color: cornsilk;
+	text-decoration: none;
+}
+
+.sub-sub-link:hover {
+	background-color: rgb(130, 130, 138);
+}
+
+.sub-sub-list {
+	display: none;
+	position: absolute;
+	left: 124px;
+	right: -124px;
+	top: 0;
+	bottom: 0;
+}
+
+.sub-item:hover .sub-sub-list {
+	display: inline-block;
+}
+
+.sub-item:hover .sub-link {
+
+	background-color: rgb(130, 130, 138);
+}
+
+.sub-item {
+	position: relative;
+}
+
