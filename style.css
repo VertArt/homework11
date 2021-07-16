@@ -75,6 +75,7 @@
 	right: -124px;
 	top: 0;
 	bottom: 0;
+	width: max-content;
 }
 
 .sub-item:hover .sub-sub-list {
@@ -90,16 +91,16 @@
 	position: relative;
 }
 
-/* .sub-sub-item {
+.sub-sub-item {
 	float: left;
+	/* display: inline-block;
+	vertical-align: top; */
+}
+
+/* .sub-item.block {
 	display: inline-block;
 	vertical-align: top;
 } */
-
-.sub-item.block {
-	display: inline-block;
-	vertical-align: top;
-}
 
 .sub-sub-list {
 	display: inline-block;
